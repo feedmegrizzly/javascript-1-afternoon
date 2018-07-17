@@ -5,28 +5,34 @@
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-//Code here
+function greeting(name){
+  return "Hello, " + name;
+}
 
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-//Code Here
+const newGreeting = function(name){
+  return "Hello, " + name;
+};
 
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-//Code Here
+const finalGreeting = (name)=>{
+    return "Hello, " + name;
+}
 
 //////////////////PROBLEM 4////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-//Code Here
+const groceries = ['apples', 'milk', 'eggs', 'bread'];
 
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
@@ -34,7 +40,13 @@
 //If the array does not contain "chocolate", add "chocolate".
 //doubleCheck should return the array.
 
-//Code Here
+function doubleCheck(groceries){ 
+  if(groceries !== "chocolate"){
+    groceries.push("chocolate");
+  } return groceries;
+};
+
+doubleCheck(groceries);
 
 //////////////////PROBLEM 5////////////////////
 
